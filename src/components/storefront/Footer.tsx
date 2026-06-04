@@ -5,7 +5,7 @@ export function Footer() {
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <div className="font-display text-5xl font-black uppercase tracking-tighter sm:text-7xl">
-              VOID<span className="text-neon">/01</span>
+              NFECT<span className="text-neon">.</span>
             </div>
             <div className="mt-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
               MADE FOR THE OVERLOOKED · EST. NOWHERE

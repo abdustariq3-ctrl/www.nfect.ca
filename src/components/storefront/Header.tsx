@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { getCountdown, DROP_DATE } from "@/lib/storefront/countdown";
 
 export function Header({ onJoin }: { onJoin: () => void }) {
+  const [mounted, setMounted] = useState(false);
   const [time, setTime] = useState(() => new Date());
   const [cd, setCd] = useState(() => getCountdown(DROP_DATE));
 
   useEffect(() => {
+    setMounted(true);
     const i = setInterval(() => {
       setTime(new Date());
       setCd(getCountdown(DROP_DATE));
@@ -23,7 +25,7 @@ export function Header({ onJoin }: { onJoin: () => void }) {
             ◆
           </div>
           <div className="font-display text-lg font-black tracking-tight sm:text-xl">
-            VOID/01
+            NFECT
           </div>
         </div>
 
@@ -31,11 +33,11 @@ export function Header({ onJoin }: { onJoin: () => void }) {
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-neon ticker" />
             <span>LIVE</span>
-            <span className="text-foreground tabular-nums">{clock}</span>
+            {mounted && <span className="text-foreground tabular-nums">{clock}</span>}
           </div>
           <div className="h-4 w-px bg-border" />
           <div>
-            NEXT DROP <span className="text-neon tabular-nums">{cd.days}D {cd.hours.toString().padStart(2,"0")}:{cd.minutes.toString().padStart(2,"0")}:{cd.seconds.toString().padStart(2,"0")}</span>
+            NEXT DROP {mounted && <span className="text-neon tabular-nums">{cd.days}D {cd.hours.toString().padStart(2,"0")}:{cd.minutes.toString().padStart(2,"0")}:{cd.seconds.toString().padStart(2,"0")}</span>}
           </div>
         </div>
 
