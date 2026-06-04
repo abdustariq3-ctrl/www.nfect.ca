@@ -12,9 +12,9 @@ import { WaitlistModal } from "@/components/storefront/WaitlistModal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "VOID/01 — Drop 01 // Overcrowded Suburbs" },
+      { title: "NFECT — Drop 01 // Overcrowded Suburbs" },
       { name: "description", content: "Bi-annual streetwear ritual. 400 pieces. No restock. Join the queue for Drop 01." },
-      { property: "og:title", content: "VOID/01 — Drop 01" },
+      { property: "og:title", content: "NFECT — Drop 01" },
       { property: "og:description", content: "Bi-annual streetwear ritual. 400 pieces. No restock." },
     ],
   }),
