@@ -9,8 +9,10 @@ const cells: { key: keyof ReturnType<typeof getCountdown>; label: string }[] = [
 ];
 
 export function Countdown() {
+  const [mounted, setMounted] = useState(false);
   const [cd, setCd] = useState(() => getCountdown(DROP_DATE));
   useEffect(() => {
+    setMounted(true);
     const i = setInterval(() => setCd(getCountdown(DROP_DATE)), 1000);
     return () => clearInterval(i);
   }, []);
@@ -37,7 +39,7 @@ export function Countdown() {
                 {label}
               </div>
               <div className="mt-3 font-display text-6xl font-black tabular-nums leading-none text-foreground sm:text-7xl">
-                {cd[key].toString().padStart(2, "0")}
+                {mounted ? cd[key].toString().padStart(2, "0") : "00"}
               </div>
               <div className="absolute right-3 top-3 h-2 w-2 bg-neon ticker" />
             </div>

@@ -4,10 +4,10 @@ import d3 from "@/assets/drop-3.jpg";
 import d4 from "@/assets/drop-4.jpg";
 
 const items = [
-  { id: "V01", name: "HEAVY HOODIE / 720GSM", category: "OUTER", img: d1 },
-  { id: "V02", name: "TACTICAL CARGO / RIPSTOP", category: "BOTTOM", img: d2 },
-  { id: "V03", name: "MA-1 SHELL / OVERSIZED", category: "OUTER", img: d3 },
-  { id: "V04", name: "GRAPHIC TEE / DOUBLE-FACED", category: "TOP", img: d4 },
+  { id: "N01", name: "HEAVY HOODIE / 720GSM", category: "OUTER", img: d1 },
+  { id: "N02", name: "TACTICAL CARGO / RIPSTOP", category: "BOTTOM", img: d2 },
+  { id: "N03", name: "MA-1 SHELL / OVERSIZED", category: "OUTER", img: d3 },
+  { id: "N04", name: "GRAPHIC TEE / DOUBLE-FACED", category: "TOP", img: d4 },
 ];
 
 export function LockedCatalog({ onUnlock }: { onUnlock: () => void }) {
