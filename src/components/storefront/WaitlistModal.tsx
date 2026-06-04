@@ -6,7 +6,7 @@ const TIERS = [
   { count: 3, label: "Early Access", desc: "Skip the queue · 48h head-start" },
   { count: 5, label: "Free Shipping", desc: "Worldwide express on Drop 01" },
   { count: 10, label: "Guaranteed Piece", desc: "Your size held · zero risk" },
-  { count: 25, label: "Mystery Box + Discord Role", desc: "Lab samples + ::VOID_INSIDER:: tag" },
+  { count: 25, label: "Mystery Box + Discord Role", desc: "Lab samples + ::NFECT_INSIDER:: tag" },
 ];
 
 export function WaitlistModal({
