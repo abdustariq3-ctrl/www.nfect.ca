@@ -62,7 +62,7 @@ export function Hero({
             ▣ REC · 04:21
           </div>
           <div className="absolute bottom-4 right-4 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-            FILE_VOID_01.MOV
+            FILE_NFECT_01.MOV
           </div>
           <div className="scan-line absolute inset-0" />
         </div>

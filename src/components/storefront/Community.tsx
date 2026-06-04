@@ -1,7 +1,7 @@
 const posts = [
   { user: "@kaios.404", tag: "DISCORD", text: "the heavyweight hoodie sample is INSANE. 720gsm feels like body armor.", likes: 421 },
   { user: "@nyx_grim", tag: "IG", text: "made it to position #312. let's see if i survive the queue.", likes: 1287 },
-  { user: "@voidrunner", tag: "DISCORD", text: "drop 00 still in rotation 14 months later. quality unmatched.", likes: 638 },
+  { user: "@nfectrunner", tag: "DISCORD", text: "drop 00 still in rotation 14 months later. quality unmatched.", likes: 638 },
   { user: "@suburbghost", tag: "IG", text: "referred 7 friends, locked in early access. the system works 🟢", likes: 2104 },
   { user: "@404.jane", tag: "DISCORD", text: "MA-1 silhouette leak looks like it'll move fast. don't sleep.", likes: 512 },
   { user: "@blckmrkt", tag: "IG", text: "no restock policy is the only ethical drop model. respect.", likes: 893 },

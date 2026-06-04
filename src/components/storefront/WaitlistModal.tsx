@@ -6,7 +6,7 @@ const TIERS = [
   { count: 3, label: "Early Access", desc: "Skip the queue · 48h head-start" },
   { count: 5, label: "Free Shipping", desc: "Worldwide express on Drop 01" },
   { count: 10, label: "Guaranteed Piece", desc: "Your size held · zero risk" },
-  { count: 25, label: "Mystery Box + Discord Role", desc: "Lab samples + ::VOID_INSIDER:: tag" },
+  { count: 25, label: "Mystery Box + Discord Role", desc: "Lab samples + ::NFECT_INSIDER:: tag" },
 ];
 
 export function WaitlistModal({
@@ -21,7 +21,7 @@ export function WaitlistModal({
   const [copied, setCopied] = useState(false);
 
   const code = useMemo(() => Math.random().toString(36).slice(2, 8).toUpperCase(), []);
-  const link = `void01.shop/q/${code}`;
+  const link = `nfect.shop/q/${code}`;
 
   useEffect(() => {
     if (open && email && stage === "email") setStage("success");
@@ -61,7 +61,7 @@ export function WaitlistModal({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b-2 border-neon bg-neon px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-neon-foreground">
-          <span>// QUEUE.PROTOCOL — VOID/01</span>
+          <span>// QUEUE.PROTOCOL — NFECT</span>
           <button onClick={onClose} aria-label="Close" className="hover:opacity-70">✕</button>
         </div>
 
@@ -89,7 +89,7 @@ export function WaitlistModal({
         ) : (
           <div className="p-6 sm:p-8">
             <div className="font-mono text-[11px] uppercase tracking-widest text-neon">
-              ✓ CONFIRMED · {email || "anonymous@void.01"}
+              ✓ CONFIRMED · {email || "anonymous@nfect.io"}
             </div>
             <h3 className="mt-3 font-display text-2xl font-black uppercase leading-tight sm:text-3xl">
               You are in the queue<span className="text-neon">.</span>
